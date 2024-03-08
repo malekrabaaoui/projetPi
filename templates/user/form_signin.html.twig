@@ -1,0 +1,16 @@
+<form method="post" action="{{ path('check_login') }}">
+                  <div class="input-group input-group-outline my-3">
+                        {{ form_widget(form.username, {'attr': {'class': 'form-control', 'placeholder': 'Enter your username'}}) }}
+                  </div>
+                  <div class="input-group input-group-outline mb-3">
+                    {{ form_widget(form.password, {'attr': {'class': 'form-control', 'placeholder': 'Enter your password'}}) }}</div>
+                  </div>
+                 
+                  <div class="text-center">
+                    <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign in</button>
+                  </div>
+                  <p class="mt-4 text-sm text-center">
+                    Don't have an account?
+                   <a href="{{ path('app_user_new') }}">Sign Up</a>
+                  </p>
+                </form>
